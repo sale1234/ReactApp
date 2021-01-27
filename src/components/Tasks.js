@@ -1,11 +1,16 @@
 import Task from './Task'
 
-const Tasks = ({ tasks, onDelete }) => {
+const Tasks = ({ tasks, onDelete, onToggle }) => {
   return (
     <>
       {/* You are creating a list*/}
       {tasks.map((task) => (
-        <Task onDelete={onDelete} key={task.id} task={task} />
+        <Task
+          onDelete={onDelete}
+          key={task.id}
+          onToggle={onToggle}
+          task={task}
+        />
       ))}
     </>
   )
