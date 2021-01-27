@@ -10,6 +10,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  line-height: 1.2;
+}
+
 .container {
   max-width: 500px;
   margin: 30px auto;
